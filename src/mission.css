@@ -1,0 +1,141 @@
+.full-mission { margin-top: 8px; }
+.full-mission .console-heading h1 { font-size: clamp(32px, 4vw, 53px); line-height: 1.08; }
+.full-mission .console-status { max-width: 240px; line-height: 1.6; text-transform: uppercase; }
+.mission-brief-strip { border-block: 1px solid #ffffff20; display: grid; grid-template-columns: 220px 1fr; gap: 25px; padding: 18px 0; margin-bottom: 30px; }
+.mission-brief-strip > span { color: #acbdce; font: 8px/1.8 'JetBrains Mono', monospace; letter-spacing: .08em; }
+.mission-brief-strip p { color: #8e9dab; font-size: 11px; line-height: 1.8; }
+.mission-configuration { display: grid; grid-template-columns: 1fr 270px; gap: 32px; margin: 25px 0 32px; }
+.mission-targets { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 13px; }
+.mission-targets button { position: relative; background: #090d12; border: 1px solid #ffffff2b; padding: 18px; text-align: left; }
+.mission-targets button[aria-pressed="true"] { border-color: #e4eaf1; background: #ffffff09; }
+.mission-targets button:disabled { opacity: .65; cursor: default; }
+.mission-targets strong { display: block; text-transform: uppercase; font-size: 12px; margin: 0 20px 9px 0; font-weight: 550; }
+.mission-targets small { display: block; color: #8fa2b6; font-size: 10px; line-height: 1.8; }
+.mission-targets svg { position: absolute; right: 15px; top: 18px; }
+.mission-playback { display: flex; flex-direction: column; gap: 10px; }
+.mission-playback > label:first-child { color: #97a9ba; font: 8px 'JetBrains Mono', monospace; }
+.mission-playback select { background: #0b1017; border: 1px solid #ffffff30; color: #e1e8ef; padding: 12px; min-height: 44px; font: 11px 'JetBrains Mono', monospace; width: 100%; }
+.guided-switch { display: flex; align-items: center; gap: 9px; font-size: 11px; min-height: 26px; }
+.guided-switch input, .preflight-card input { width: 18px; height: 18px; accent-color: #d4e2ed; flex-shrink: 0; }
+.mission-playback > small { font-size: 9px; color: #8c9cac; line-height: 1.7; }
+.flight-journey { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); padding: 0; margin: 0 0 25px; }
+.flight-journey li { padding: 15px 9px 15px 0; border-top: 1px solid #ffffff26; color: #697e92; }
+.flight-journey li > span { display: grid; place-items: center; width: 20px; height: 20px; border: 1px solid #ffffff25; font: 8px 'JetBrains Mono', monospace; margin-bottom: 10px; }
+.flight-journey strong { font: 8px/1.7 'JetBrains Mono', monospace; text-transform: uppercase; overflow-wrap: anywhere; }
+.flight-journey .is-current { color: #fff; border-color: #fff; }
+.flight-journey .is-current > span { background: #eee; color: #111; }
+.flight-journey .is-done { color: #a5cdb9; border-color: #6e9a82; }
+.full-flight-display { grid-template-columns: .95fr 1.15fr; }
+.full-flight-display .countdown-instrument { padding: 30px; }
+.full-flight-display .countdown-clock { font-size: clamp(45px, 5.5vw, 76px); }
+.full-flight-display .sequence-metrics { gap: 12px; }
+.full-flight-display .sequence-metrics strong { font-size: 19px; }
+.full-flight-display .sequence-metrics em { font-size: 9px; }
+.telemetry-caption { margin-top: 21px; color: #758b9f; font-size: 9px; }
+.mission-scene-shell { min-width: 0; display: flex; flex-direction: column; background: #050b13; }
+.mission-view-controls { display: flex; padding: 12px 18px; gap: 8px; border-bottom: 1px solid #ffffff12; }
+.mission-view-controls button { background: none; border: 1px solid #ffffff25; color: #8b9fb1; padding: 8px 14px; min-height: 40px; font: 8px 'JetBrains Mono', monospace; text-transform: uppercase; }
+.mission-view-controls button[aria-pressed="true"] { color: #e7eef4; border-color: #a9bacb; }
+.mission-visual { flex: 1; display: grid; align-items: center; }
+.mission-visual svg { width: 100%; height: auto; display: block; }
+.scene-moving-vehicle { transition: transform .35s linear; }
+.downlink-beam { animation: beam-flow 1.4s linear infinite; }
+@keyframes beam-flow { to { stroke-dashoffset: -22; } }
+.mission-data-strip { display: grid; grid-template-columns: 1fr 1.4fr 1fr 1fr; border: 1px solid #ffffff25; border-top: none; margin-bottom: 25px; }
+.mission-data-strip > div { padding: 21px; border-right: 1px solid #ffffff18; }
+.mission-data-strip > div:last-child { border: none; }
+.mission-data-strip small { font: 7px 'JetBrains Mono', monospace; color: #8ca0b4; display: block; margin-bottom: 12px; }
+.mission-data-strip b { font: 10px/1.7 'JetBrains Mono', monospace; color: #d4e0ec; }
+.mission-data-strip b > span { color: #8299ae; font-size: 8px; }
+.full-mission .console-primary, .full-mission .console-secondary, .full-mission .console-hold { min-height: 46px; text-transform: uppercase; line-height: 1.6; text-align: center; overflow-wrap: anywhere; }
+.full-mission .command-actions > a { display: flex; justify-content: center; align-items: center; gap: 9px; }
+.stage-progress { height: 3px; background: #ffffff20; margin-top: 20px; }
+.stage-progress span { height: 100%; background: #d8e5ef; display: block; transition: width .3s linear; }
+.stage-time { font: 8px/1.8 'JetBrains Mono', monospace; color: #8499ad; display: block; margin-top: 10px; }
+.preflight-panel { border: 1px solid #ffffff25; padding: 27px; margin-top: 26px; background: #070a0e; }
+.preflight-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.preflight-card { display: flex; gap: 13px; border: 1px solid #ffffff20; background: #0a0e14; padding: 20px 15px; cursor: pointer; }
+.preflight-card.is-checked { border-color: #9dbba777; background: #91cba206; }
+.preflight-card > span { min-width: 0; }
+.preflight-card small { display: block; color: #71869a; font: 7px 'JetBrains Mono', monospace; margin: 1px 0 10px; }
+.preflight-card strong { display: block; font-size: 11px; text-transform: uppercase; font-weight: 550; line-height: 1.6; }
+.preflight-card p { font-size: 10px; color: #91a2b4; line-height: 1.85; margin-top: 9px; }
+.preflight-card b { font: 7px/1.6 'JetBrains Mono', monospace; display: block; color: #8799aa; margin-top: 14px; letter-spacing: .06em; }
+.preflight-card.is-checked b { color: #b2d7bc; }
+.flight-support-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 22px; margin-top: 26px; }
+.stage-brief, .anomaly-panel { padding: 28px; border: 1px solid #ffffff25; background: #080c11; min-width: 0; }
+.stage-brief h2, .anomaly-panel h2 { font-size: 22px; text-transform: uppercase; line-height: 1.3; margin: 15px 0; font-weight: 550; }
+.stage-brief > p:not(.eyebrow), .anomaly-panel > p:not(.eyebrow) { font-size: 12px; line-height: 1.9; color: #9eafbd; }
+.stage-brief dl { margin: 20px 0; }
+.stage-brief dl > div { padding: 12px 0; border-top: 1px solid #ffffff15; }
+.stage-brief dt { font: 8px 'JetBrains Mono', monospace; text-transform: uppercase; color: #cbd6df; }
+.stage-brief dd { font-size: 11px; line-height: 1.85; color: #93a7b9; margin-top: 6px; }
+.anomaly-panel > button { width: 100%; margin-top: 22px; }
+.anomaly-panel.has-fault { border-color: #c27d6177; background: #23181355; }
+.anomaly-panel.has-fault h2 { color: #f3c0a4; }
+.operations-grid.is-in-flight { grid-template-columns: 1fr; }
+.operations-grid.is-in-flight .flight-event-log { max-height: 280px; }
+.full-mission .flight-event-log p { overflow-wrap: anywhere; }
+.full-mission .flight-event-log p > span { flex-shrink: 0; }
+.full-mission .replay-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.reset-prompt { border-top: 1px solid #ffffff20; margin-top: 20px; padding-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; }
+.reset-prompt p { width: 100%; font-size: 12px; color: #a4b1bf; margin-bottom: 7px; }
+.mission-debrief { padding: 35px; border: 1px solid #a1c1ae60; background: linear-gradient(125deg, #172c2538, #090c10); }
+.mission-debrief h2 { font-size: clamp(27px, 4vw, 42px); text-transform: uppercase; font-weight: 600; margin: 16px 0; }
+.mission-debrief > div > p:not(.eyebrow) { font-size: 13px; color: #aab8c5; line-height: 1.9; max-width: 680px; }
+.debrief-metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 28px 0; border-block: 1px solid #ffffff20; padding: 25px 0; gap: 20px; }
+.debrief-metrics b { display: block; font: 19px 'JetBrains Mono', monospace; }
+.debrief-metrics span { display: block; font-size: 9px; color: #8b9fae; margin-top: 10px; }
+.debrief-lessons h3 { font: 10px 'JetBrains Mono', monospace; text-transform: uppercase; }
+.debrief-lessons ul { padding-left: 18px; list-style: disc; margin: 14px 0 25px; font-size: 12px; color: #9eafbb; line-height: 2.1; }
+.debrief-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.debrief-actions a { display: flex; align-items: center; gap: 10px; }
+.report-notice { color: #acd8bd; font-size: 11px; line-height: 1.8; margin-top: 15px; }
+.full-mission :is(button, input, select, a):focus-visible { outline: 2px solid #c2e2fa; outline-offset: 4px; }
+@media(max-width: 1000px) {
+  .mission-configuration { grid-template-columns: 1fr 230px; gap: 20px; }
+  .preflight-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .full-flight-display { grid-template-columns: 1fr 1fr; }
+  .full-flight-display .countdown-instrument { padding: 25px 20px; }
+  .full-flight-display .sequence-metrics strong { font-size: 16px; }
+}
+@media(max-width: 760px) {
+  .mission-brief-strip { grid-template-columns: 1fr; gap: 8px; }
+  .mission-configuration { grid-template-columns: 1fr; gap: 25px; }
+  .mission-targets button { padding: 15px 12px; }
+  .mission-targets strong { font-size: 10px; margin-right: 10px; }
+  .mission-targets small { font-size: 9px; }
+  .mission-targets svg { width: 12px; right: 8px; top: 16px; }
+  .mission-playback select { font-size: 16px; }
+  .guided-switch { min-height: 40px; }
+  .flight-journey { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .flight-journey li { padding-block: 11px; }
+  .flight-journey strong { font-size: 7px; }
+  .full-flight-display { grid-template-columns: 1fr; }
+  .full-flight-display .countdown-clock { font-size: clamp(42px, 12vw, 68px); }
+  .full-flight-display .sequence-metrics strong { font-size: 18px; }
+  .full-flight-display .sequence-metrics { gap: 8px; }
+  .mission-data-strip { grid-template-columns: 1fr 1fr; }
+  .mission-data-strip > div { padding: 18px 13px; border-bottom: 1px solid #ffffff18; }
+  .mission-data-strip > div:nth-child(2) { border-right: none; }
+  .mission-data-strip > div:nth-child(3) { border-bottom: none; }
+  .mission-data-strip small { font-size: 6.5px; }
+  .mission-data-strip b { font-size: 9px; }
+  .preflight-panel { padding: 22px 16px; }
+  .preflight-grid { grid-template-columns: 1fr; }
+  .preflight-card { padding: 18px 14px; }
+  .preflight-card p { font-size: 11px; }
+  .preflight-panel .panel-title { flex-wrap: wrap; gap: 10px; }
+  .flight-support-grid { grid-template-columns: 1fr; gap: 18px; }
+  .stage-brief, .anomaly-panel { padding: 24px 20px; }
+  .mission-debrief { padding: 25px 20px; }
+  .debrief-metrics { grid-template-columns: 1fr 1fr; gap: 25px 12px; }
+  .debrief-metrics b { font-size: 17px; }
+  .debrief-actions { flex-direction: column; }
+  .debrief-actions a { justify-content: center; }
+  .full-mission .replay-controls { grid-template-columns: 1fr; }
+  .full-mission .console-heading h1 { font-size: 31px !important; }
+}
+@media(prefers-reduced-motion: reduce) {
+  .full-mission *, .full-mission *::before, .full-mission *::after { animation: none !important; transition: none !important; scroll-behavior: auto; }
+}

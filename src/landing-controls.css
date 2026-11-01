@@ -1,0 +1,30 @@
+.landing-attitude { width: 100%; border: 1px solid #ffffff25; padding: 22px; margin-top: 20px; background: #0a1018; }
+.attitude-title-row { display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+.attitude-title-row h2 { font-size: 20px; text-transform: uppercase; margin-top: 8px; }
+.attitude-title-row > label { font-size: 11px; display: flex; align-items: center; gap: 8px; }
+.attitude-title-row input { width: 18px; height: 18px; accent-color: #d8e8f5; }
+.landing-attitude > p { font-size: 11px; line-height: 1.9; color: #98aabd; margin-top: 15px; }
+.attitude-readouts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; padding: 20px 0; margin: 20px 0; border-block: 1px solid #ffffff20; }
+.attitude-readouts small { display: block; color: #869bb0; font: 7px/1.7 'JetBrains Mono', monospace; margin-bottom: 10px; }
+.attitude-readouts strong { font: 17px 'JetBrains Mono', monospace; color: #e2edf5; }
+.attitude-readouts em { font-style: normal; font-size: 9px; color: #8ca6bb; }
+.attitude-trim-controls { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 8px; align-items: end; }
+.attitude-trim-controls label { font: 7px/1.7 'JetBrains Mono', monospace; color: #99acbd; }
+.attitude-trim-controls select { display: block; width: 100%; min-height: 46px; color: #dce9f4; background: #111b27; border: 1px solid #ffffff30; padding: 8px; font: 9px 'JetBrains Mono', monospace; margin-top: 7px; }
+.attitude-trim-controls button { min-height: 46px; border: 1px solid #ffffff40; color: #d8e5f0; background: #16202b; padding: 8px; font: 10px/1.6 'JetBrains Mono', monospace; touch-action: manipulation; }
+.attitude-trim-controls button:disabled { opacity: .4; }
+.attitude-trim-controls kbd { color: #8ca5b9; display: block; font-size: 8px; }
+.attitude-slider-label { display: block; margin-top: 22px; color: #9dafc0; font: 8px 'JetBrains Mono', monospace; }
+.attitude-slider { display: block; width: 100%; height: 44px; accent-color: #c9deed; touch-action: pan-y; }
+.landing-attitude .attitude-help { font-size: 10px; color: #9eb8cc; margin-top: 4px; }
+.landing-attitude :is(button, input, select):focus-visible { outline: 2px solid #b6dcf7; outline-offset: 3px; }
+@media(max-width: 760px) {
+ .landing-attitude { padding: 18px 14px; }
+ .attitude-title-row { flex-direction: column; align-items: start; }
+ .attitude-title-row > label { min-height: 35px; }
+ .attitude-readouts { grid-template-columns: 1fr 1fr; gap: 22px 14px; }
+ .attitude-trim-controls { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+ .attitude-trim-controls label { grid-column: 1 / -1; }
+ .attitude-trim-controls select { font-size: 16px; }
+ .attitude-trim-controls button { font-size: 9px; padding: 8px 3px; }
+}

@@ -1,0 +1,85 @@
+/* Flight school: scoped additions to the monochrome engineering flight deck. */
+.academy-journey-steps { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); border-top: 1px solid #ffffff30; list-style: none; padding: 0; margin: 32px 0; }
+.academy-journey-steps > li { min-width: 0; padding: 24px 16px 24px 0; border-bottom: 1px solid #ffffff24; }
+.academy-journey-steps > li > span { color: #8b9aab; font: 10px 'JetBrains Mono', monospace; display: block; margin-bottom: 20px; }
+.academy-journey-steps strong { display: block; color: #f4f6f9; font-size: 13px; font-weight: 600; text-transform: uppercase; line-height: 1.5; }
+.academy-journey-steps p { color: #a8b3c0; font-size: 12px; line-height: 1.8; margin-top: 10px; }
+.academy-journey-actions { display: flex; flex-wrap: wrap; gap: 24px 32px; align-items: center; }
+.academy-journey-actions > a { min-height: 44px; }
+.academy-journey-actions > p { color: #98a5b4; font-size: 11px; line-height: 1.9; margin-left: auto; }
+.academy-journey-actions > .action-primary { white-space: normal; text-align: left; }
+.academy-journey-actions > .action-primary svg { flex-shrink: 0; }
+.academy-phase-tabs { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 5px; margin-bottom: 14px; }
+.academy-phase-tabs > button { min-width: 0; min-height: 70px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 9px; padding: 13px 12px; border: 1px solid #ffffff30; color: #c8d1dc; background: #080b10; font-size: 11px; text-align: left; text-transform: uppercase; line-height: 1.5; cursor: pointer; }
+.academy-phase-tabs > button > span { color: #8f9cad; font: 9px 'JetBrains Mono', monospace; }
+.academy-phase-tabs > button:hover { border-color: #c9d3de; }
+.academy-phase-tabs > button.is-active { color: #080b10; background: #f3f5f8; border-color: #f3f5f8; }
+.academy-phase-tabs > button.is-active > span { color: #435366; }
+.academy-phase-tabs > button:focus-visible, .academy-orbit-presets > button:focus-visible, .academy-orbit-controls > input:focus-visible { outline: 2px solid #b6e2ff; outline-offset: 4px; }
+.academy-phase-content.training-card { padding: 32px; background: #090d12; border-radius: 0; }
+.academy-phase-content.training-card > h3 { color: #f5f7fa; font-size: clamp(23px, 2.5vw, 32px); line-height: 1.3; font-weight: 600; margin: 15px 0; text-transform: uppercase; }
+.academy-phase-content.training-card > p:not(.eyebrow) { color: #c1ccd8; font-size: 14px; line-height: 1.9; max-width: 900px; }
+.academy-phase-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin: 28px 0; border-top: 1px solid #ffffff25; padding-top: 25px; }
+.academy-phase-columns > div { min-width: 0; }
+.academy-phase-columns h4 { color: #e3e9f0; font: 10px/1.7 'JetBrains Mono', monospace; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 12px; }
+.academy-phase-columns p { color: #abb9c9; font-size: 13px; line-height: 1.9; }
+.academy-phase-content > .text-link { min-height: 44px; }
+.academy-assumption { color: #9caebe; font-size: 12px; line-height: 1.9; margin-top: 16px; overflow-wrap: anywhere; }
+.academy-assumption a { color: #dce6f2; text-decoration: underline; text-underline-offset: 3px; }
+.academy-assumption a:hover { color: #fff; }
+.academy-orbit.training-card { display: grid; grid-template-columns: minmax(200px, .6fr) minmax(0, 1.4fr); gap: 38px; padding: 32px; border-radius: 0; background: #080c11; }
+.academy-orbit-visual { min-width: 0; align-self: center; text-align: center; color: #a6bed0; }
+.academy-orbit-visual svg { display: block; width: 100%; max-width: 300px; height: auto; margin: 0 auto; }
+.academy-orbit-visual > p { font-size: 11px; line-height: 1.8; color: #a4b2c2; }
+.academy-orbit-controls { min-width: 0; }
+.academy-orbit-controls > label { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; color: #bcc9d8; font: 10px/1.7 'JetBrains Mono', monospace; }
+.academy-orbit-controls > label strong { color: #fff; font-weight: 500; font-size: 20px; }
+.academy-orbit-controls > input[type="range"] { width: 100%; max-width: 100%; min-width: 0; height: 44px; margin: 15px 0 6px; accent-color: #e1eaf4; cursor: pointer; touch-action: pan-y; }
+.academy-orbit-presets { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px; }
+.academy-orbit-presets > button { min-width: 0; min-height: 44px; border: 1px solid #ffffff30; background: transparent; color: #b8c7d7; font: 10px 'JetBrains Mono', monospace; padding: 8px 5px; cursor: pointer; }
+.academy-orbit-presets > button:hover { border-color: #fff; color: #fff; }
+.academy-orbit-presets > button[aria-pressed="true"] { background: #e6edf5; border-color: #e6edf5; color: #080c11; }
+.academy-orbit-readouts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; padding: 25px 0; margin: 24px 0 18px; border-block: 1px solid #ffffff28; }
+.academy-orbit-readouts > div { min-width: 0; }
+.academy-orbit-readouts span { display: block; color: #9eacbd; font: 8px/1.7 'JetBrains Mono', monospace; margin-bottom: 12px; }
+.academy-orbit-readouts strong { display: block; color: #edf3fa; font: 400 clamp(20px, 2vw, 27px) 'JetBrains Mono', monospace; letter-spacing: -.05em; white-space: nowrap; }
+.academy-orbit-readouts small { font-size: 10px; color: #a8b9ca; letter-spacing: 0; }
+.academy-orbit-controls > p { color: #cbd5e1; font-size: 12px; line-height: 1.9; }
+.academy-orbit-controls > .academy-assumption { color: #9caebe; }
+.academy-orbit-controls code { font-size: 12px; white-space: nowrap; }
+.academy-orbit-controls > .text-link { margin-top: 15px; min-height: 44px; }
+@media (max-width: 1050px) {
+  .academy-journey-steps { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .academy-phase-tabs { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .academy-orbit.training-card { gap: 24px; padding: 25px; grid-template-columns: minmax(170px, .5fr) minmax(0, 1.4fr); }
+  .academy-orbit-readouts { gap: 9px; }
+  .academy-orbit-readouts strong { font-size: 21px; }
+  .academy-journey-actions > p { margin-left: 0; width: 100%; }
+}
+@media (max-width: 750px) {
+  .academy-phase-columns { grid-template-columns: 1fr; gap: 22px; }
+  .academy-phase-columns h4 { margin-bottom: 7px; }
+  .academy-phase-content.training-card { padding: 24px; }
+  .academy-orbit.training-card { grid-template-columns: 1fr; gap: 25px; }
+  .academy-orbit-visual svg { max-width: 220px; }
+  .academy-orbit-controls > p { font-size: 12px; }
+  .academy-orbit-readouts strong { font-size: 24px; }
+  .academy-phase-content.training-card > p:not(.eyebrow), .academy-phase-columns p { font-size: 13px; }
+}
+@media (max-width: 440px) {
+  .academy-journey-steps, .academy-phase-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .academy-journey-steps { margin: 24px 0; }
+  .academy-journey-steps > li { padding: 20px 10px 20px 0; }
+  .academy-journey-steps > li > span { margin-bottom: 11px; }
+  .academy-journey-actions { align-items: stretch; flex-direction: column; gap: 16px; }
+  .academy-journey-actions > .action-primary { width: 100%; padding-inline: 18px; }
+  .academy-phase-tabs > button { min-height: 64px; padding: 11px; }
+  .academy-phase-content.training-card, .academy-orbit.training-card { padding: 20px; }
+  .academy-phase-content.training-card > h3 { font-size: 22px; }
+  .academy-orbit-presets { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .academy-orbit-readouts { grid-template-columns: 1fr; gap: 18px; }
+  .academy-orbit-readouts > div { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .academy-orbit-readouts span { margin-bottom: 0; max-width: 90px; }
+  .academy-orbit-readouts strong { font-size: 23px; }
+  .academy-orbit-controls > label strong { font-size: 19px; }
+}
